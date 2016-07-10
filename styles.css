@@ -2,88 +2,192 @@
 
 This css code was created by Keving Hudson for WATS3010 class at SeattlU. 7/7/2016 */
 
+
 /* Background image added as a cover that stretches to fit entire web page */
+
 body {
-  background-image: url('images/hard-paper-texture.jpg');
+  background-image: whitesmoke;
   background-size: cover;
+  text-align: center;
 }
+
+
 /* Headings font changed */
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: sans-serif;
+  text-align: center;
 }
+
+
 /* All paragraphs font changed*/
+
 p {
   font-family: "Times New Roman", Times, serif;
 }
+
+
 /* This is the grey banner up top that is translucent with rounded corners */
+
 header.page-header {
   background-color: lightblue;
+  background-size: auto;
   background: rgba(100, 100, 100, 0.5);
-  padding: 1rem;
-  margin-right: 7cm;
+  padding: 0px;
+  margin-right: 0cm;
+  border: 2px solid #000;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
+
+
 /* Changing the first child (text) of the class page-hearder */
+
 .page-header h1 {
-  margin-top: 0;
+  margin-top: 15px;
   margin-bottom: 0;
   font-size: 60px;
+  letter-spacing: 7px;
 }
+
+
 /* Changing the first child under the first child of page-header */
+
 .page-header small {
+  display: block;
   font-size: 20px;
 }
+
+
 /* Changing the second child of the class page-header */
+
 .page-header p {
-  margin-top: 0;
+  margin-top: 20px;
 }
+
+
 /* Changing the size of the picture and moving the img description underneath the img */
+
 aside.more-info img {
   width: 300px;
   height: auto;
+  margin: auto;
   display: block;
-  margin-bottom: .2cm;
+  margin-bottom: 1cm;
 }
+
+
 /* class more-info list list bullets removed */
+
 .more-info ul {
   list-style-type: none;
 }
+
+.more-info p {
+  font-size: 20px;
+  margin-bottom: 1cm;
+}
+
+
 /* Sub class in the aside container spacing changed */
+
 .info-links {
   margin-bottom: 0;
 }
-/* Sub class social-links changed to horizontal layout */
-.social-links li {
-  margin-left: 0;
-  padding-left: 2px;
-  border: none;
+
+.info-links li {
+  margin-right: 8px;
+  margin-left: center;
+  font-size: 15px;
+  padding: 9px;
+  border: 2px;
+  border-style: outset;
+  border-color: #0000;
   list-style: none;
-  display: inline;
+  display: inline-block;
 }
+
+.info-links li a:hover,
+a:active {
+  background-color: grey;
+  color: white;
+}
+
+.info-links li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Sub class social-links changed to horizontal layout */
+
+
+/* .social-links li {
+  
+ 
+ 
+  
+  margin-left: center;
+ font-size: 15px;
+  padding: 6px;
+  border:2px;
+ border-style: outset;
+border-color:#0000;
+  list-style: none;
+  display: inline-block;
+  
+}
+.social-links li a:hover, a:active{
+  background-color: grey;
+color: white;
+}
+.social-links li a {
+  color: black;
+  text-decoration: none;
+  
+} */
+
+
 /* Section content list bullets removed */
+
 #content {
   list-style-type: none;
+  font-style: italic;
 }
+
+
 /* Section content sub class poem has text changed for better viewing */
+
 .poem {
   list-style-type: none;
   font-size: large;
   line-height: 1.8;
   list-style-position: outside;
-  margin: 0;
+  margin: 80px;
   padding: 0;
 }
+
+
 /* First child of sub class poem changes the first letter to a different size that allows the poem to float around the lettering */
+
 .poem li:first-child:first-letter {
-  float: left;
-  font-size: 3cm;
+  /*   float: left; */
+  font-size: 2cm;
+  font-style: normal;
   margin-right: .25cm;
   line-height: 50%;
 }
+
+
 /* Section page-footer list bullets removed */
+
 .page-footer li {
   list-style-type: none;
 }
